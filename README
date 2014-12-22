@@ -1,0 +1,13 @@
+INSTALL
+1. Проверял только на *nix-системе(ubuntu)
+2. Установка apace: sudo apt-get install apache2
+3. Установка python2.7:
+  sudo apt-get update
+  sudo apt-get install python2.7
+4. Установка cgi
+  sudo a2enmod cgi
+  sudo service apache2 restart
+5. Скачиваем репозиторий(WARNING:
+      server.py line-53: print '''<li><a href="%s" target="_blank">%s</a></li>'''%('http://localhost/upload/cgi-bin/files/' +file, file )
+      абсолютный путь)  
+6. Запускаем/проверям      
