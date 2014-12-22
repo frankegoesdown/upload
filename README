@@ -9,5 +9,6 @@ INSTALL
   sudo service apache2 restart
 5. Скачиваем репозиторий(WARNING:
       server.py line-53: print '''<li><a href="%s" target="_blank">%s</a></li>'''%('http://localhost/upload/cgi-bin/files/' +file, file )
-      абсолютный путь)  
-6. Запускаем/проверям      
+      абсолютный путь) 
+6. Главное не забыть поставить папке files на чтение/запись и дать полные права файлы server.py 
+7. Запускаем/проверям      
