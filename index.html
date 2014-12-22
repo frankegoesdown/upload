@@ -1,0 +1,20 @@
+<html>
+ <head>
+  <title>Uploader</title>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script type="text/javascript" src="js/script.js"></script>
+ </head>
+ <body onload = "set_param(0)">
+  <form id="main_form" name="main_form" action="cgi-bin/server.py" method="POST"
+   id="myForm" enctype="multipart/form-data" target="hidden_iframe">
+
+   <!--<form enctype="multipart/form-data"
+                     action="cgi-bin/server.py" method="post">-->
+   <input type="hidden" name="param" id="param" value="rdy">
+   <input type="file" name="filename"><br>
+   <input type="button" value="Start Upload" onclick="set_param(1)">
+  </form>
+  <iframe id="hidden_iframe" name="hidden_iframe" src="about:blank"></iframe>
+  </body>
+</html>
